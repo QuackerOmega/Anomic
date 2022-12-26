@@ -5,6 +5,7 @@ while task.wait(10) do if not getgenv().autotrade then break end
             break
         end
     end
+    wait(1)
     local args = {
         [1] = game:GetService("Players")[PlayerToTrade],
         [2] = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Tool"),
